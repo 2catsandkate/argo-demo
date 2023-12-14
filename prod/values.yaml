@@ -17,12 +17,12 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod-dns01
     acme.cert-manager.io/http01-edit-in-place: "true"
   hosts:
-    - host: stage-artemis.devopskates.com
+    - host: prod-artemis.devopskates.com
       paths:
         - path: /
           pathType: ImplementationSpecific
   tls: 
-   - secretName: stage-artemis-tls
+   - secretName: prod-artemis-tls
      hosts:
-       - stage-artemis.devopskates.com
+       - prod-artemis.devopskates.com
 
